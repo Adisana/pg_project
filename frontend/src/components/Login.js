@@ -40,7 +40,7 @@ const Login = () => {
       } else if (err.response?.status === 500) {
         setError('Backend Internal Server Error (500). Please check your Django terminal.');
       } else if (err.message === 'Network Error' || !err.response) {
-        setError('Connection failed. Please ensure the Django backend is running at http://127.0.0.1:8000');
+        setError('Connection failed. Please ensure the Django backend is running at https://pg-project-s1m0.onrender.com/');
       } else {
         setError('Login failed. Please try again.');
       }

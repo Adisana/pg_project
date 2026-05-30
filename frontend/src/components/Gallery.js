@@ -13,7 +13,7 @@ const Gallery = () => {
     if (url.startsWith('http://') || url.startsWith('https://')) {
       return url;
     }
-    return `http://127.0.0.1:8000${url}`;
+    return `https://pg-project-s1m0.onrender.com/${url}`;
   };
 
   useEffect(() => {
